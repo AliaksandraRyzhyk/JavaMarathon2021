@@ -17,5 +17,6 @@ public class Task1 {
         } else {
             System.out.println("Среднеэтажный дом");
         }
+        sc.close();
     }
 }
