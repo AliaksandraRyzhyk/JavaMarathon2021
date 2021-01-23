@@ -18,13 +18,14 @@ public class Task1 {
             else kol3++;
             sum += array[i];
         }
-            System.out.println("Сгенерирован следующий массив: "+Arrays.toString(array));
-            System.out.println("Длина массива: " + n);
-            System.out.println("Количестве чисел больше 8: " + kol );
-            System.out.println("Количестве чисел равных 1: " + kol1);
-            System.out.println("Количестве четных чисел: " + kol2);
-            System.out.println("Количестве нечетных чисел: " + kol3);
-            System.out.println("Сумме всех элементов массива: " + sum);
+        System.out.println("Сгенерирован следующий массив: "+Arrays.toString(array));
+        System.out.println("Длина массива: " + n);
+        System.out.println("Количестве чисел больше 8: " + kol );
+        System.out.println("Количестве чисел равных 1: " + kol1);
+        System.out.println("Количестве четных чисел: " + kol2);
+        System.out.println("Количестве нечетных чисел: " + kol3);
+        System.out.println("Сумме всех элементов массива: " + sum);
+        sc.close();
     }
 }
 
