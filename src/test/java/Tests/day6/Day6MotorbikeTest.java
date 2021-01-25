@@ -1,5 +1,5 @@
 //package Tests.day6;
-//
+////
 //import Tests.AbstractTest;
 //import day6.Motorbike;
 //import org.junit.jupiter.api.Test;
