@@ -6,10 +6,10 @@ public class Player {
     public static final int MIN_STAMINA = 0;
     public static int countPlayers = 0;
 
-    public Player(int stamina){
+    public Player(int stamina) {
         if (countPlayers < 6) {
-        this.stamina = stamina;
-        countPlayers++;
+            this.stamina = stamina;
+            countPlayers++;
         } else countPlayers = 6;
     }
 
@@ -20,21 +20,21 @@ public class Player {
         }
     }
 
-    public static void info(){
-        int i = 6-countPlayers;
-        if (countPlayers < 6){
-            switch (i){
+    public static void info() {
+        int i = 6 - countPlayers;
+        if (countPlayers < 6) {
+            switch (i) {
                 case 0:
                 case 5:
-                    System.out.println("Команды неполные. На поле еще есть "+i+" свободных мест");
+                    System.out.println("Команды неполные. На поле еще есть " + i + " свободных мест");
                     break;
                 case 1:
-                    System.out.println("Команды неполные. На поле еще есть "+i+" свободное место");
+                    System.out.println("Команды неполные. На поле еще есть " + i + " свободное место");
                     break;
                 case 2:
                 case 3:
                 case 4:
-                    System.out.println("Команды неполные. На поле еще есть "+i+" свободных места");
+                    System.out.println("Команды неполные. На поле еще есть " + i + " свободных места");
                     break;
             }
         } else System.out.println("На поле нет свободных мест");
