@@ -14,11 +14,11 @@ public class Player {
 
     public void run() {
         if (stamina > MIN_STAMINA) {
-                this.stamina = stamina - 1;
-                if (stamina == MIN_STAMINA)
-                    countPlayers--;
-            }
+            this.stamina = stamina - 1;
+            if (stamina == MIN_STAMINA)
+                countPlayers--;
         }
+    }
 
     public static void info() {
         int i = 6 - countPlayers;
