@@ -15,8 +15,9 @@ public class Task2 {
         Player.info();
         Player player7 = new Player(rd);
         Player.info();
+        System.out.println(player1.getStamina());
         System.out.println(Player.getCountPlayers());
-        for(int i = rd; i > 0; i--)
+        for(int i = player1.getStamina(); i > 0; i--)
             player1.run();
         System.out.println(player1.getStamina());
         System.out.println(Player.getCountPlayers());
