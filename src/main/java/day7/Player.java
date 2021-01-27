@@ -7,18 +7,18 @@ public class Player {
     public static int countPlayers = 0;
 
     public Player(int stamina) {
-        if (countPlayers < 6) {
-            this.stamina = stamina;
+        this.stamina = stamina;
+        if (countPlayers < 6)
             countPlayers++;
-        } else countPlayers = 6;
     }
 
     public void run() {
         if (stamina > MIN_STAMINA) {
-            this.stamina = stamina - 1;
-            if (stamina == MIN_STAMINA) countPlayers--;
+                this.stamina = stamina - 1;
+                if (stamina == MIN_STAMINA)
+                    countPlayers--;
+            }
         }
-    }
 
     public static void info() {
         int i = 6 - countPlayers;

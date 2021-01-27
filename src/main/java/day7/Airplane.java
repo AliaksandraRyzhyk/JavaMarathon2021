@@ -19,9 +19,8 @@ public class Airplane {
         System.out.println("Изготовитель: " + producer + ", год выпуска: " + year + ", длина: " + length + ", вес: " + weight + ", количество топлива в баке: " + fuel);
     }
 
-    public int fillUp(int n) {
-        this.fuel = getFuel() + n;
-        return this.fuel;
+    public void fillUp(int n) {
+        this.fuel = fuel + n;
     }
 
     public static void compareAirplanes(Airplane airplane, Airplane airplane1) {
