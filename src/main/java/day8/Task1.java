@@ -14,7 +14,7 @@ public class Task1 {
         long start1 = System.currentTimeMillis();
         StringBuilder sb = new StringBuilder(" ");
         for (int i = 0; i < 200001; i++)
-            sb.append(i + " ");
+            sb.append(i + " ");//sb.append(i).append(" ");
         System.out.println(sb.toString());
         long finish1 = System.currentTimeMillis();
         long timeConsumedMillis1 = finish1 - start1;
