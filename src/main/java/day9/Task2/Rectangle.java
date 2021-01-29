@@ -1,8 +1,8 @@
 package day9.Task2;
 
 public class Rectangle extends Figure {
-    int width;
-    int height;
+    private int width;
+    private int height;
 
     public Rectangle(int width, int height, String color) {
         super(color);
