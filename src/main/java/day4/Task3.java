@@ -7,12 +7,12 @@ public class Task3 {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = (int) (Math.random() * (50 + 1));
-                System.out.print(array[i][j]+" ");
+                System.out.print(array[i][j] + " ");
                 if (j == 0) array1[i] = array[i][j];
                 else array1[i] += array[i][j];
             }
-                System.out.println();
-            }
+            System.out.println();
+        }
         int indexMax = 0;
         int max = array1[0];
         for (int i = 0; i < array1.length; i++) {
