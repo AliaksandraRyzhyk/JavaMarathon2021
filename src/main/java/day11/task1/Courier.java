@@ -36,7 +36,7 @@ public class Courier implements Worker {
     @Override
     public void doWork() {
         salary += 100;
-        warehouse.setCountDeliveredOrders();
+        warehouse.incrementCountDeliveredOrders();
     }
 
     @Override

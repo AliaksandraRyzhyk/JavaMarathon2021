@@ -36,7 +36,7 @@ public class Picker implements Worker {
     @Override
     public void doWork() {
         salary += 80;
-        warehouse.setCountPickedOrders();
+        warehouse.incrementCountPickedOrders();
     }
 
     @Override

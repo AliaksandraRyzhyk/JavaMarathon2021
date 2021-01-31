@@ -6,6 +6,8 @@ public abstract class Hero {
     protected int magicDef;
     protected int physAtt;
     protected int magicAtt;
+//    protected int health;
+
 }
 
 
