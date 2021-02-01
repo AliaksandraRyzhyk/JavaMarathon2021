@@ -1,13 +1,13 @@
-package day12.task4;
+package day12.task5;
 
 import java.util.List;
 
 public class MusicBand {
     private String name;
     private int year;
-    private List<String> members;
+    private List<MusicArtist> members;
 
-    public MusicBand(String name, int year, List<String> members) {
+    public MusicBand(String name, int year, List<MusicArtist> members) {
         this.name = name;
         this.year = year;
         this.members = members;
@@ -29,36 +29,28 @@ public class MusicBand {
         this.year = year;
     }
 
-    public List<String> getMembers() {
+    public List<MusicArtist> getMembers() {
         return members;
     }
 
-    public void setMembers(List<String> members) {
+    public void setMembers(List<MusicArtist> members) {
         this.members = members;
     }
 
     public static void transferMembers(MusicBand a, MusicBand b){
-        for (String member:a.getMembers()) {
+        for (MusicArtist member:a.getMembers()) {
             b.getMembers().add(member);
         }
             a.getMembers().clear();
     }
-//    public void transferMembers(MusicBand band2){//если бы надо было non-static
-//        for (String member:this.firstAndLastName) {
-//            band2.getFirstAndLastName().add(member);
-//            this.firstAndLastName.clear();
-//        }
-//    }
 
     public void printMembers(){
-        System.out.println(this.getMembers());
+        System.out.println(this.members);
     }
 
     @Override
     public String toString() {
-        return "name='" + name + '\'' +
-                ", year=" + year +
-                '}';
+        return name + year;
     }
 
 }
